@@ -21,6 +21,6 @@ def load_and_split_data(csv_file, x):
 
 # Example usage
 csv_file_path = 'G:\Mon Drive\data\Vader.rescaled.data.csv.xls'  # Replace with your CSV file path
-parts = 2  # Number of parts to split the CSV into
+parts = 4  # Number of parts to split the CSV into
 save_path = 'G:\Mon Drive\data'
 load_and_split_data(csv_file_path, parts)
