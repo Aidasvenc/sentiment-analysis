@@ -16,11 +16,11 @@ def load_and_split_data(csv_file, x):
         # Create a subset of the dataframe
         df_subset = df.iloc[start_idx:end_idx]
         # Save the subset to a Parquet file
-        df_subset.to_parquet(f'{save_path}\data_part_{i + 1}.parquet')
+        df_subset.to_parquet(f'{save_path}\labeled_part_{i + 1}.parquet')
 
 
 # Example usage
-csv_file_path = 'G:\Mon Drive\data\Vader.rescaled.data.csv.xls'  # Replace with your CSV file path
+csv_file_path = 'G:\Mon Drive\data\labeleddata.csv.xls'  # Replace with your CSV file path
 parts = 4  # Number of parts to split the CSV into
 save_path = 'G:\Mon Drive\data'
 load_and_split_data(csv_file_path, parts)
